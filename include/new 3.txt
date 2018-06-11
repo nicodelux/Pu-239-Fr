@@ -1,0 +1,10 @@
+cd /var/www/Pu-239
+git checkout master -f
+git pull
+composer update
+composer dump-autoload -o
+npm install
+npm update
+npm i -g npm
+php bin/set_perms.php
+php bin/uglify.php
